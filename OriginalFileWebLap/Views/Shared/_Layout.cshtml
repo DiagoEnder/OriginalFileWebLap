@@ -7,29 +7,310 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OriginalFileWebLap.styles.css" asp-append-version="true" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="responsivesize.css"> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OriginalFileWebLap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        <!--Top Nav-->
+        <div class="navbar">
+            <div class="navbarbar">
+                <!-- Logo Nav -->
+                <div class="nav-logo">
+                    <div class="box-logo">
+                        <img src="img/logo2.png">
+                        <a href="home.html">LAP4LIFE</a>
+                    </div>
+                </div>
+                <!--Middle Nav-->
+                <div class="nav-middle">
+                    <div class="box-middle">
+                        <td>
+                            <div class="box-search">
+                                <input type="text" placeholder="Tìm Kiếm">    <a href="#"><i class="fas fa-search"></i></a>
+                            </div>
+                        </td>
+                    </div>
+                </div>
+                <!-- Login & Shopping Cart Nav -->
+                <div class="nav-login">
+                    <ul>
+                        <!--GioHang-->
+                        <li>
+                            <div class="box-login">
+                                <a href="#" class="hover-zoom">
+                                    Giỏ Hàng
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <!--DangNhap-->
+                        <li>
+                            <div class="box-login">
+                                <a href="Login.html" class="hover-zoom">
+                                    Đăng Nhập
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+        <!--Menu Main-->
+        <div class="box-menu">
+            <ul>
+                <li class="hover-underline"><a href="#">APPLE</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="hover-underline"><a href="#">ASUS</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="hover-underline"><a href="#">PHỤ KIỆN</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="hover-underline"><a href="#">MÁY CŨ GIÁ RẺ</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="hover-underline"><a href="#">THU MUA</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="hover-underline"><a href="#">BẢO HÀNH</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="hover-underline"><a href="#">KHUYẾN MÃI</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="hover-underline"><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+        <br />
     </header>
+    <!--Container-->
+    <div class="container">
+        <!--Banner Rolling-->
+        <div class="banner-rolling">
+        </div>
+        <!--Hover Product-->
+        <div class="hover">
+            <div class="item clean">
+                <img src="img/laptopbanner3.avif" alt="image">
+                <div class="overlay">
+                    <span>"</span>
+                    <span>“Work and play, all in one device.”</span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="item clean">
+                <img src="img/hover2.webp" alt="image">
+                <div class="overlay">
+                    <span>"</span>
+                    <span>Amazing accessories made even better</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!--Main Content-->
+        <div class="main-content">
+            <!--Menu-->
+            <div class="menu">
+                <button class="toggle">Danh Mục</button>
+                <ul class="list">
+                    <li class="list-item" style="--delay:0.2s">
+                        <a href="#">Laptop Văn Phòng</a>
+                    </li>
+                    <li class="list-item" style="--delay:0.4s">
+                        <a href="#">Laptop Gaming</a>
+                    </li>
+                    <li class="list-item" style="--delay:0.6s">
+                        <a href="#">Laptop Đồ Hoạ</a>
+                    </li>
+                    <li class="list-item" style="--delay:0.4s">
+                        <a href="#">Linh Kiện</a>
+                    </li>
+                </ul>
+            </div>
+            <br />
+            <!--Best Seller-->
+            <div class="best-seller-container">
+                <div class="best-seller-title">LAPTOP BÁN CHẠY</div>
+                <div class="best-seller-product">
+                    <div class="product-image">
+                        <img src="img/3.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Laptop Apple MacBook Air 13</div>
+                        <div class="product-price">$1099</div>
+                        <table>
+                            <tr>
+                                <th>CPU</th>
+                                <th>RAM</th>
+                                <th>Ổ CỨNG</th>
+                            </tr>
+                            <tr>
+                                <td>Apple M1</td>
+                                <td>8GB</td>
+                                <td>256GB SSD</td>
+                            </tr>
+                        </table>
+                        <a href="#" style="color: blue;">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="best-seller-product">
+                    <div class="product-image">
+                        <img src="img/1.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Laptop Asus TUF Gaming FX506LH</div>
+                        <div class="product-price">$1099</div>
+                        <table>
+                            <tr>
+                                <th>CPU</th>
+                                <th>RAM</th>
+                                <th>Ổ CỨNG</th>
+                            </tr>
+                            <tr>
+                                <td>i5, 10300, 2.5GHz</td>
+                                <td>8GB</td>
+                                <td>512GB SSD</td>
+                            </tr>
+                        </table>
+                        <a href="#" style="color: blue;">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="best-seller-product">
+                    <div class="product-image">
+                        <img src="img/2.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Laptop MSI Gaming GF63 Thin 11SC i5</div>
+                        <div class="product-price">$1099</div>
+                        <table>
+                            <tr>
+                                <th>CPU</th>
+                                <th>RAM</th>
+                                <th>Ổ CỨNG</th>
+                            </tr>
+                            <tr>
+                                <td>i5, 11400H, 2.7GHz </td>
+                                <td>8GB</td>
+                                <td>512GB SSD</td>
+                            </tr>
+                        </table>
+                        <a href="#" style="color: blue;">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="hover-zoom">
+                        <a href="#">Xem Thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <!--Sales-->
+            <div class="best-seller-container">
+                <div class="best-seller-title">LAPTOP KHUYẾN MÃI</div>
+                <div class="best-seller-product">
+                    <div class="product-image">
+                        <img src="img/3.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Laptop Apple MacBook Air 13</div>
+                        <div class="product-price" style="display: inline-block;">
+                            <p style="text-decoration: line-through; color: #888;">$1099</p>
+                            <p style="font-weight: bold;">$899</p>
+                            <table>
+                                <tr>
+                                    <th>CPU</th>
+                                    <th>RAM</th>
+                                    <th>Ổ CỨNG</th>
+                                </tr>
+                                <tr>
+                                    <td>i5, 11400H, 2.7GHz </td>
+                                    <td>8GB</td>
+                                    <td>512GB SSD</td>
+                                </tr>
+                            </table>
+                            <a href="#" style="color: blue;">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-seller-product">
+                    <div class="product-image">
+                        <img src="img/1.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Laptop Asus TUF Gaming FX506LH</div>
+                        <div class="product-price">
+                            <p style="text-decoration: line-through; color: #888;">$1099</p>
+                            <p style="font-weight: bold;">$899</p>
+                            <table>
+                                <tr>
+                                    <th>CPU</th>
+                                    <th>RAM</th>
+                                    <th>Ổ CỨNG</th>
+                                </tr>
+                                <tr>
+                                    <td>i5, 11400H, 2.7GHz </td>
+                                    <td>8GB</td>
+                                    <td>512GB SSD</td>
+                                </tr>
+                            </table>
+                            <a href="#" style="color: blue;">Xem thêm</a>
+                            <table>
+                                <tr>
+                                    <th>CPU</th>
+                                    <th>RAM</th>
+                                    <th>Ổ CỨNG</th>
+                                </tr>
+                                <tr>
+                                    <td>Apple M1</td>
+                                    <td>8RAM</td>
+                                    <td>256 GB SSD</td>
+
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="best-seller-product">
+                    <div class="product-image">
+                        <img src="img/2.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">Laptop MSI Gaming GF63 Thin 11SC i5</div>
+                        <div class="product-price">
+                            <p style="text-decoration: line-through; color: #888;">$1099</p>
+                            <p style="font-weight: bold;">$899</p>
+                            <table>
+                                <tr>
+                                    <th>CPU</th>
+                                    <th>RAM</th>
+                                    <th>Ổ CỨNG</th>
+                                </tr>
+                                <tr>
+                                    <td>i5, 11400H, 2.7GHz </td>
+                                    <td>8GB</td>
+                                    <td>512GB SSD</td>
+                                </tr>
+                            </table>
+                            <a href="#" style="color: blue;">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="hover-zoom">
+                        <a href="#">Xem Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="brand">
+            <h2 style="color: white;">Thương Hiệu Nổi Bật</h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="img">
+                <img src="img/asus.png">
+                <img src="img/apple.png">
+                <img src="img/Dell_Logo.svg.png">
+                <img src="img/hp.png">
+                <img src="img/lenovo.png">
+                <img src="img/HyperX-logo.png">
+                <img src="img/intel.png">
+            </div>
+        </div>
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
