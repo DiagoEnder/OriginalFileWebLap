@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 namespace OriginalFileWebLap.Controllers
 {
+    [Area("Admin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
