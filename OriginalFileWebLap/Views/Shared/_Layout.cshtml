@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - OriginalFileWebLap</title>
+    <title>@ViewData["Title"] - LAP4LIFE</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OriginalFileWebLap.styles.css" asp-append-version="true" />
@@ -22,44 +22,38 @@
                 <div class="nav-logo">
                     <div class="box-logo">
                         <img src="img/logo2.png">
-                        <a href="home.html">LAP4LIFE</a>
+                        <a href="home.html" style="text-decoration:none;color:black">LAP4LIFE</a>
                     </div>
                 </div>
                 <!--Middle Nav-->
                 <div class="nav-middle">
-                    <div class="box-middle">
-                        <td>
-                            <div class="box-search">
-                                <input type="text" placeholder="Tìm Kiếm">    <a href="#"><i class="fas fa-search"></i></a>
-                            </div>
-                        </td>
+                    <div class="box-middle">       
+                        <div class="box-search">
+                            <input type="text" placeholder="Tìm Kiếm">    
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>                    
                     </div>
                 </div>
                 <!-- Login & Shopping Cart Nav -->
                 <div class="nav-login">
-                    <ul>
-                        <!--GioHang-->
-                        <li>
-                            <div class="box-login">
-                                <a href="#" class="hover-zoom">
-                                    Giỏ Hàng
-                                    <i class="fas fa-shopping-cart"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--DangNhap-->
-                        <li>
-                            <div class="box-login">
-                                <a href="Login.html" class="hover-zoom">
-                                    Đăng Nhập
-                                    <i class="fas fa-user"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="box-login">
+                        <a href="#" class="hover-zoom" style="text-decoration:none;color:black">
+                            Giỏ Hàng
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                       
+                    </div>
+                    <!--DangNhap-->
+                    <div class="box-login">
+                        <a href="Login.html" class="hover-zoom" style="text-decoration:none;color:black">
+                            Đăng Nhập
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
         <!--Menu Main-->
         <div class="box-menu">
             <ul>
@@ -73,52 +67,74 @@
                 <li class="hover-underline"><a href="#">LIÊN HỆ</a></li>
             </ul>
         </div>
-        <br />
+        <!--Banner Rolling-->
+        <!--Banner-->
+        <div class="box-banner">
+            <div class="slider banner">
+                <div class="slide">
+                    <img src="img/banner4.jpg" alt="Image 1">
+                </div>           
+            </div>
+      </div>
+        <script src="script.js"></script>
     </header>
+    <!--SideBar-->
+    <div class="menu">
+        <button class="toggle">Danh Mục</button>
+        <ul class="list">
+            <li class="list-item" style="--delay:0.2s">
+                Nhu Cầu Sử Dụng
+            </li>
+            <li class="list-item" style="--delay:0.4s">
+                <a href="#">Văn Phòng</a>
+            </li>
+            <li class="list-item" style="--delay:0.6s">
+                <a href="#">Gaming</a>
+            </li>
+            <li class="list-item" style="--delay:0.8s">
+                <a href="#">Đồ Hoạ</a>
+            </li>
+            <li class="list-item" style="--delay:0.2s">
+                Ram
+            </li>
+            <li class="list-item" style="--delay:0.4s">
+                <a href="#">8GB</a>
+            </li>
+            <li class="list-item" style="--delay:0.6s">
+                <a href="#">16GB</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="scripts.js"></script>
     <!--Container-->
     <div class="container">
-        <!--Banner Rolling-->
-        <div class="banner-rolling">
-        </div>
         <!--Hover Product-->
-        <div class="hover">
-            <div class="item clean">
-                <img src="img/hover1.webp" alt="image">
-                <div class="overlay">
-                    <span>"</span>
-                    <span>“Work and play, all in one device.”</span>
-                    <span></span>
+        <div class="hover-hover">
+            <div class="hover">
+                <div class="item clean">
+                    <img src="img/hover1.webp" alt="image">
+                    <div class="overlay">
+                        <span>"</span>
+                        <span>“Work and play, all in one device.”</span>
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-            <div class="item clean">
-                <img src="img/hover2.webp" alt="image">
-                <div class="overlay">
-                    <span>"</span>
-                    <span>Amazing accessories made even better</span>
-                    <span></span>
+                <div class="item clean">
+                    <img src="img/hover2.webp" alt="image">
+                    <div class="overlay">
+                        <span>"</span>
+                        <span>Amazing accessories made even better</span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--sidebar-->
         <!--Main Content-->
         <div class="main-content">
             <!--Menu-->
-            <div class="menu">
-                <button class="toggle">Danh Mục</button>
-                <ul class="list">
-                    <li class="list-item" style="--delay:0.2s">
-                        <a href="#">Laptop Văn Phòng</a>
-                    </li>
-                    <li class="list-item" style="--delay:0.4s">
-                        <a href="#">Laptop Gaming</a>
-                    </li>
-                    <li class="list-item" style="--delay:0.6s">
-                        <a href="#">Laptop Đồ Hoạ</a>
-                    </li>
-                    <li class="list-item" style="--delay:0.4s">
-                        <a href="#">Linh Kiện</a>
-                    </li>
-                </ul>
-            </div>
+
             <br />
             <!--Best Seller-->
             <div class="best-seller-container">
