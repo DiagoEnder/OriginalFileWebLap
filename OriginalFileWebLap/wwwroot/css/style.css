@@ -95,12 +95,12 @@ body{
 .box-menu ul li{
   flex: 1;
   text-align: center;
-  list-style: none;
+  text-decoration:none;
   display: inline-block;
   margin: 0% auto;
 }
 .box-menu ul li a{
-  color: white;
+    text-decoration:none;
 }
 .hover-content{
   display: none;
@@ -186,6 +186,7 @@ height: auto;
   position: relative;
   display: inline-block;
   cursor: pointer;
+  text-decoration:none;
 }
 .hover-underline::after {
   content: "";
