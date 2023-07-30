@@ -3,6 +3,7 @@
 namespace OriginalFileWebLap.Areas.Admin.Controllers
 {
     [Area("Admin")]
+
     public class DataincomeController : Controller
     {
         public IActionResult Income1()
