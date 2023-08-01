@@ -1,8 +1,10 @@
-﻿namespace OriginalFileWebLap.Models
+﻿using Microsoft.Build.Framework;
+
+namespace OriginalFileWebLap.Models
 {
     public class Requirement
     {
-        public int IdRe { get; set; }
+        public int Id { get; set; }
         [Required]
         public string ReName { get; set; }
 

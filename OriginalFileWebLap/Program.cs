@@ -1,4 +1,10 @@
+using OriginalFileWebLap.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<LapStoreContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("LapConnetion")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

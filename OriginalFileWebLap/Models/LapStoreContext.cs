@@ -95,7 +95,7 @@ namespace OriginalFileWebLap.Models
             {
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(50)
+                    .HasMaxLength(100)
                     .IsUnicode(true);
                 entity.Property(e => e.Description)
                    .IsRequired()
@@ -142,6 +142,29 @@ namespace OriginalFileWebLap.Models
                       .WithOne(p => p.Product)
                       .HasForeignKey(c => c.IdProduct);
             });
+            //có lẽ làm session..
+            /*modelBuilder.Entity<Cart>(entity =>
+            {
+                entity.Property(e => e.NamePro)
+                      .IsRequired()
+                      .HasMaxLength(100)
+                      .IsUnicode(true);
+
+                entity.Property(e => e.imgPro)
+                      .IsRequired()
+                      .HasMaxLength(200)
+                      .IsUnicode(false);
+
+                entity.Property(e => e.Quantity)
+                      .IsRequired();
+
+
+                entity.Property(e => e.Price)
+                      .IsRequired();
+
+
+
+            });*/
 
 
         }

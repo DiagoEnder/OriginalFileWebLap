@@ -2,7 +2,7 @@
 {
     public class Cart
     {
-        public int IdCart { get; set; }
+        public int Id { get; set; }
         public int IdPro { get; set; }
         public string NamePro { get; set; }
         public string imgPro { get; set; }
@@ -12,6 +12,7 @@
         public double Total => Price * Quantity;
 
         public ICollection<Product> products { get; set; }
+        public UserAccount UserAccount { get; set; }
         
     }
 }
