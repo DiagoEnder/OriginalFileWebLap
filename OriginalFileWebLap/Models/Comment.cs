@@ -10,6 +10,7 @@
         
 
         public Product Product { get; set; }
+        public UserAccount User { get; set; }
 
 
     }
